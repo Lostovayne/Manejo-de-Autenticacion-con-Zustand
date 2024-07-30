@@ -1,6 +1,4 @@
-import { StateCreator } from 'zustand';
-
-
+import { StateCreator } from "zustand";
 
 export interface PersonSlice {
   firstName: string;
@@ -10,14 +8,10 @@ export interface PersonSlice {
   setLastName: (lastName: string) => void;
 }
 
-
-
 export const createPersonSlice: StateCreator<PersonSlice> = (set) => ({
-
-  firstName: '',
-  lastName: '',
-
+  firstName: "",
+  lastName: "",
 
   setFirstName: (firstName: string) => set({ firstName }),
   setLastName: (lastName: string) => set({ lastName }),
-})
+});
